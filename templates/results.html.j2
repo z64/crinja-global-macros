@@ -1,0 +1,11 @@
+{% for result in results %}
+  <div class="result">
+    <h3 class="title">
+      {{link_extern(result.url, result.title)}}
+    </h3>
+    {{link_extern(result.url, result.url)}}
+    <div>
+      {{result.snippet}}
+    </div>
+  </div>
+{% endfor %}
